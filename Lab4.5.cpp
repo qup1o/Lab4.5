@@ -27,9 +27,9 @@ int main()
 
         if ((x >= 0 && x * x + y * y <= R * R) ||
             (x <= 0 && fabs(y) >= -x && fabs(y) <= R))
-            cout << "yes" << endl;
+            cout << "hit" << endl;
         else
-            cout << "no" << endl;
+            cout << "miss" << endl;
     }
 
     cout << endl << fixed;
@@ -43,10 +43,10 @@ int main()
         if ((x >= 0 && x * x + y * y <= R * R) ||
             (x <= 0 && fabs(y) >= -x && fabs(y) <= R))
             cout << setw(8) << setprecision(4) << x << "  "
-            << setw(8) << setprecision(4) << y << "  " << "yes" << endl;
+            << setw(8) << setprecision(4) << y << "  " << "hit" << endl;
         else
             cout << setw(8) << setprecision(4) << x << "  "
-            << setw(8) << setprecision(4) << y << "  " << "no" << endl;
+            << setw(8) << setprecision(4) << y << "  " << "miss" << endl;
     }
 
     return 0;
